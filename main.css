@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin: 0px
+}
+body {
+    overflow-x: hidden;
+    box-shadow: border-box;
+}
+.bg-body{
+    background-color: rgba(255,255,255);
+}
+.bg-input{
+    background-color: rgba(239,239,239)
+}
+.bg-input-text{
+    background-color: #fff;
+}
+.bg-arrow{
+    background-color: #d33f3f;
+}
+.text-color{
+    color: rgba(0, 149, 246)
+}
+.mt{
+    margin-top: 10px;
+}
+.mr{
+    margin-right: 0.8rem;
+}
+.ml{
+    margin-left: 0.7rem;
+}
+.mr_dot{
+    position: relative;
+    right: 0.9rem;
+}
+.ml_dot{
+    margin-right: 2rem;
+}
+.mt_text{
+    position: relative;
+    bottom: 3px;
+}
+.fs-text{
+    font-size: 0.85rem
+}
+.fs-hour{
+    font-size: 0.7rem;
+}
+
+.mb-status{
+    position: relative;
+    bottom: 0.6rem
+}
+.mb-comment{
+    position: relative;
+    bottom: 1.3rem
+}
+.mb-hour{
+    position: relative;
+    bottom: 1.9rem;
+}
+.mb-suggest{
+    position: relative;
+    bottom: 1rem;
+    right: 0.25rem
+}
+.mb-translation{
+    position: relative;
+    bottom: 0.15rem
+}
+.color-ch{
+    color: rgba(142, 142, 142)
+}
+.hr{
+    position: relative;
+    bottom: 3.4rem;
+}
+.color-post{
+    color: #47afff;
+}
+.mb-acomment{
+    position: relative;
+    bottom: 3.7rem;
+}
+.ml-main{
+    margin-left: 70rem;
+}
+.position-user{
+    position: relative;
+    bottom: 1.2rem;
+}
+.position-footer{
+    position: relative;
+    bottom: 2.35rem
+}
+.position-footer-two{
+    position: relative;
+    bottom: 3rem;
+}
+.nav{
+    position: relative;
+    bottom: 0.5rem;
+}
+.color-footer{
+    color: rgba(199, 199, 199)
+}
+
+
+/* @media(min-width:62em){
+    #arrow {
+        position: fixed;
+        z-index: 1000;
+      }
+} */
+
+@media (max-width: 768px){
+    /* body {
+        overflow-x: hidden
+    } */
+    .padding{
+        position: relative;
+        right: 0.65rem
+    }
+    .content{
+        display: none;
+    }
+    .d-flex{
+        display: inline-block;        
+    }
+    .ml{
+        margin-left: 10px;
+    }
+    .mr-dot{
+        margin-right: 3px
+    }
+    .jc{
+        position: relative;
+        left: 5rem;
+    }
+    .position-icon{
+        position: relative;
+        top: 1.5rem;
+        right: 2rem;
+    }
+    .mb-footer2{
+        position: relative;
+        bottom: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    .mb-footer1{
+        position: relative;
+        bottom: 0.3rem;
+    }
+    .footer-mobile{
+        width: auto;
+        height: 50px;
+        background-color: #fff;        
+    }
+}
