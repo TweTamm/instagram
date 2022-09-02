@@ -22,24 +22,29 @@
            <!-- desktop -->
         <div
           class="d-lg-block bg-body d-flex align-items-center fixed-top shadow"
-          style="min-height: 60px; z-index: 5"
+          style="height: 60px; z-index: 5"
         >
-        <div class="mt container-fluid d-flex justify-content-lg-around">
+        <div class="mt container-fluid d-flex justify-content-center">
           <!-- --- -->
         
           <!-- --- -->
             <!-- navbar content-->
-            <div class="row align-items-center"> 
+            <div class="row justify-content-center my-0"> 
+              <!-- mobile header -->
+              <div class="d-lg-none">
+                 
+              </div>
                 <!-- logo & arrow -->
                 <div class=" col d-flex align-items-center nav ">
                     <!-- logo -->
-                    <div class="d-flex ml">
+                    <div class="d-flex ml padding-header">
                       <iconify-icon icon="logos:instagram" style="font-size: 2rem;"></iconify-icon>
                       <!-- arrow icon -->
                       <iconify-icon icon="akar-icons:chevron-down" style="font-size: 0.8rem;" class="my-1" 
                       data-bs-toggle="dropdown" aria-expanded="false" id="arrowMenu" type="button"
                       ></iconify-icon>
                       <!-- arrow icon menu -->
+                      
                       <ul class="dropdown-menu" aria-labelledby="arrowMenu" style="height: 80px; width: 30px">
                           <li class="ml d-flex">
                             <iconify-icon icon="mingcute:user-follow-line" type="button"></iconify-icon>
@@ -56,7 +61,7 @@
                 <div class="col d-flex align-items-center ms-5 nav">
                     <div class="input-group bg-input rounded ms-5 content">
                         <span class="input-group-prepend d-lg-block" id="searchMenu" 
-                              data-bs-toggle="dropdown" aria-expanded="false" type="button"
+                              data-bs-toggle="dropdown" aria-expanded="false"
                               data-bs-auto-close="outside">
                            <div class="input-group-text border-0 rounded-pill"
                                 style="min-height: 30px; width: 250px">
@@ -157,13 +162,13 @@
                    </li>
                    <div class="d-flex jc">
                      <!-- message -->
-                     <li class="">
+                     <li class="padding-header">
                       <button class="btn">
                         <i class="far fa-comment fs-4"></i>
                       </button>
                      </li>
                      <!-- post -->
-                     <li class="">
+                     <li class="padding-header">
                       <button class="btn">
                         <i class="far fa-plus-square fs-4"></i>
                       </button>
@@ -204,31 +209,33 @@
        <div class="d-flex bg-white border text-muted rounded justify-content-between position-relative py-3 "
             style="max-width: 444px; height:100px">   
            <!-- slider mobile -->
-            <div class="d-lg-none">
+            <div class="d-lg-none ">
               <li class="ms-2 btn p-0" type="button">
-                <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2" 
-                 style="width:58px; height:58px;object-fit: cover">
+                <!-- <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2"  -->
+                 <!-- style="width:58px; height:58px;object-fit: cover"> -->
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip30wxSD5G_fp4NCBFdZxOgzX333MwNaHSw&usqp=CAU" alt="avatar" class="rounded-circle me-2"
+                 style="width:60px; height:60px; object-fit: cover">
                  <iconify-icon icon="akar-icons:circle-plus-fill" style="color: blue;" class="position-icon"></iconify-icon>   
                  <p class="text-dark fs-6 d-block">Your story</p>
               </li>
               <li class="ms-2 btn p-0" type="button">
                 <img src="https://source.unsplash.com/random/1" alt="avatar" class="rounded-circle me-2 border border-danger" 
-                 style="width:58px; height:58px;object-fit: cover">
+                 style="width:60px; height:60px;object-fit: cover">
                  <p class="text-dark fs-6 d-block">charlot</p>
               </li>
               <li class="ms-2 btn p-0" type="button">
                 <img src="https://source.unsplash.com/random/2" alt="avatar" class="rounded-circle me-2 border border-danger" 
-                 style="width:58px; height:58px;object-fit: cover">
+                 style="width:60px; height:60px;object-fit: cover">
                  <p class="text-dark fs-6 d-block">engfa</p>
               </li>
               <li class="ms-2 btn p-0" type="button">
                 <img src="https://source.unsplash.com/random/3" alt="avatar" class="rounded-circle me-2 border border-danger" 
-                 style="width:58px; height:58px;object-fit: cover">
+                 style="width:60px; height:60px;object-fit: cover">
                  <p class="text-dark fs-6 d-block">heidi</p>
               </li>
               <li class="ms-2 btn p-0" type="button">
                 <img src="https://source.unsplash.com/random/4" alt="avatar" class="rounded-circle me-2 border border-danger" 
-                 style="width:58px; height:58px;object-fit: cover">
+                 style="width:60px; height:60px;object-fit: cover">
                  <p class="text-dark fs-6 d-block">marima</p>
               </li>
             </div>  
@@ -375,7 +382,7 @@
  
          <!-- picture 1 -->
        <!-- main -->
-       <div class="border bg-white rounded shadow mt-3  mb-footer1" style="width: 444px">
+     <div class="border bg-white rounded shadow mt-3  mb-footer1" style="width: 444px">
          <!-- top -->
          <div class="bg-white" style="height: 3.5rem">
             <div class="d-flex align-items-center justify-content-between">
@@ -384,10 +391,40 @@
                 style="width:38px; height:38px;object-fit: cover">
                 <p class="text-dark fs-6 d-block mt-1">charlot</p>
              </div>
-               <i class="fas fa-ellipsis-h me-3 mb-2" type="button"></i>       
+
+               <i class="fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
+
+              <!-- -- ellipsis-h menu- -->
+              <div class="modal fade
+              " id="iconMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-input-text rounded-5 ms-3" style="min-height:385px; width:400px">
+                      <ul class="list-unstyled">
+                        <li type="button" class="fs_text-menu fw-bold text-danger py-1 mt">Report</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu fw-bold text-danger">Unfollow</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu text-dark">Add to favorites</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu text-dark">Go to article</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu text-dark">Share it up</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu text-dark">Coppy link</li><hr class="bg-border">
+                        <li type="button" class="fs_text-menu text-dark">Dip</li><hr class="bg-border">
+                        <div class="">
+                          <button
+                            type="button"
+                            class="btn text-dark fs_text-menu position-cancel mr_dt"
+                            data-bs-dismiss="modal"
+                          >
+                           Cancel
+                          </button>
+                    </div>
+                      </ul>
+
+                </div>
+              </div>
+            </div>
+
           </div>
          </div>
- 
+         
          <!-- img -->
          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
      
@@ -442,21 +479,21 @@
          <!-- footer -->
          <div class="bg-white rounded" style="height: 200px">
              <!-- icons -->
-             <div class="d-flex align-items-center my-2 justify-content-between">
+             <div class="list-icon d-flex align-items-center my-2 justify-content-between">
                <!-- heart -->
                <div class="">
                  <button class="btn p-0 mr ml">
-                   <i class="far fa-heart fs-4 "></i>
+                   <i class="icon-pic far fa-heart fs-4 "></i>
                  </button>
                 
                 <!-- comment -->
                  <button class="btn p-0 mr">
-                   <iconify-icon icon="tabler:message-circle-2" class="fs-3"></iconify-icon>
+                   <iconify-icon icon="tabler:message-circle-2" class="fs-3 icon-pic"></iconify-icon>
                  </button>
                  
                 <!-- send -->
                  <button class="btn p-0 mr">
-                   <iconify-icon icon="tabler:send" class="fs-3"></iconify-icon>
+                   <iconify-icon icon="tabler:send" class="fs-3 icon-pic"></iconify-icon>
                 </button>
                 </div>
  
@@ -468,46 +505,47 @@
  
                 <!-- save -->
                 <div class="align-items-center mr">
-                 <iconify-icon icon="fluent:bookmark-20-regular" class="fs-3" type="button"></iconify-icon>
+                 <iconify-icon icon="fluent:bookmark-20-regular" class="fs-3 icon-pic" type="button"></iconify-icon>
                 </div>
  
  
              </div>
+            <!-- </div> -->
  
              <!-- liked -->
              <div class="d-flex">
                  <img class="rounded-circle ml t" src="https://source.unsplash.com/random/14" alt="small avatar" style="width: 17px; height: 17px; object-fit: cover" type="button">
-                 <p class="fw-normal fs-text mt_text ms-1">Liked by <span class="fs-text fw-bold">ryry, cheryl</span> and <span class="fw-bold">87 others</span> </p>
+                 <p class="fw-normal fs-text mt_text ms-1">Liked by <span class="fs-text fw-bold" type="button">ryry, cheryl</span> and <span class="fw-bold" type="button">87 others</span> </p>
              </div>
  
              <!-- status -->
              <div class="d-flex mb-status">
-                <p class="fs-text fw-bold ml">Charlot</p>
+                <p class="fs-text fw-bold ml" type="button">Charlot</p>
                 <p class="fs-text fw-normal ms-1">I love this pictures 🤍</p>
              </div>
  
              <!-- comment -->
              <div class="d-flex mb-comment ml">
-                <p class="fs-text color-ch">See all 35 comments</p>
+                <p class="fs-text color-ch" type="button">See all 35 comments</p>
              </div>
  
              <!-- hour -->
              <div class="d-flex ml mb-hour">
                  <p class="color-ch fs-hour">12 HOURS AGO</p>
-                 <p class="fw-bold fs-text ms-2 mb-translation">See translation</p>
+                 <p class="fw-bold fs-text ms-2 mb-translation" type="button">See translation</p>
              </div>
          <hr class="hr">
               
               <!-- add comment -->
               <div class="mb-acomment d-flex justify-content-between align-items-center"> 
                <div class="d-flex">
-                 <iconify-icon icon="entypo:emoji-happy" class="ml my-0 mr fs-4"></iconify-icon>
+                 <iconify-icon icon="entypo:emoji-happy" class="ml my-0 mr fs-4" type="button"></iconify-icon>
                  <p class="color-ch">Add comment...</p>
                </div>
                    <p class="color-post mr">Post</p>
                </div>
          </div>
-       </div>
+    </div>
  
  <!-- ============= -->
        <!-- picture 2 -->
@@ -521,7 +559,35 @@
              style="width:38px; height:38px;object-fit: cover">
              <p class="text-dark fs-6 d-block mt-1">engfa</p>
           </div>
-            <i class="fas fa-ellipsis-h me-3 mb-2"></i>       
+           
+          <i class="fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
+
+          <!-- -- ellipsis-h menu- -->
+          <div class="modal fade" id="iconMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-input-text rounded-5 ms-3" style="min-height:385px; width:400px">
+                  <ul class="list-unstyled">
+                    <li type="button" class="fs_text-menu fw-bold text-danger py-1 mt">Report</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu fw-bold text-danger">Unfollow</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu text-dark">Add to favorites</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu text-dark">Go to article</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu text-dark">Share it up</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu text-dark">Coppy link</li><hr class="bg-border">
+                    <li type="button" class="fs_text-menu text-dark">Dip</li><hr class="bg-border">
+                    <div class="">
+                      <button
+                        type="button"
+                        class="btn text-dark fs_text-menu position-cancel mr_dt"
+                        data-bs-dismiss="modal"
+                      >
+                       Cancel
+                      </button>
+                </div>
+                  </ul>
+
+            </div>
+          </div>
+        </div>       
        </div>
       </div>
  
@@ -580,21 +646,21 @@
       <!-- footer -->
       <div class="bg-white rounded" style="height:200px; width: 444px;">
           <!-- icons -->
-          <div class="d-flex align-items-center justify-content-between">
+          <div class="list-icon d-flex align-items-center justify-content-between">
             <!-- heart -->
             <div class="">
               <button class="btn p-0 mr ml">
-                <i class="far fa-heart fs-4 "></i>
+                <i class="far fa-heart fs-4 icon-pic"></i>
               </button>
              
              <!-- comment -->
               <button class="btn p-0 mr">
-                <iconify-icon icon="tabler:message-circle-2" class="fs-3"></iconify-icon>
+                <iconify-icon icon="tabler:message-circle-2" class="fs-3 icon-pic"></iconify-icon>
               </button>
               
              <!-- send -->
               <button class="btn p-0 mr">
-                <iconify-icon icon="tabler:send" class="fs-3"></iconify-icon>
+                <iconify-icon icon="tabler:send" class="fs-3 icon-pic"></iconify-icon>
              </button>
              </div>
  
@@ -606,7 +672,7 @@
  
              <!-- save -->
              <div class="align-items-center mr">
-              <iconify-icon icon="fluent:bookmark-20-regular" class="fs-3" type="button"></iconify-icon>
+              <iconify-icon icon="fluent:bookmark-20-regular" class="fs-3 icon-pic" type="button"></iconify-icon>
              </div>
  
  
@@ -614,41 +680,40 @@
  
           <!-- liked -->
           <div class="d-flex">
-              <img class="rounded-circle ml" src="https://source.unsplash.com/random/14" alt="small avatar" style="width: 17px; height: 17px; object-fit: cover">
-              <p class="fw-normal fs-text mt_text ms-1">Liked by <span class="fs-text fw-bold">jennie, lisa</span> and <span class="fw-bold">100 others</span> </p>
+              <img class="rounded-circle ml" src="https://source.unsplash.com/random/14" alt="small avatar" style="width: 17px; height: 17px; object-fit: cover" type="button">
+              <p class="fw-normal fs-text mt_text ms-1">Liked by <span class="fs-text fw-bold" type="button">jennie, lisa</span> and <span class="fw-bold" type="button">100 others</span> </p>
           </div>
  
           <!-- status -->
           <div class="d-flex mb-status">
-             <p class="fs-text fw-bold ml">engfa</p>
+             <p class="fs-text fw-bold ml" type="button">engfa</p>
              <p class="fs-text fw-normal ms-1">This moment so great 🤍</p>
           </div>
  
           <!-- comment -->
           <div class="d-flex mb-comment ml">
-             <p class="fs-text color-ch">See all 70 comments</p>
+             <p class="fs-text color-ch" type="button">See all 70 comments</p>
           </div>
  
           <!-- hour -->
           <div class="d-flex ml mb-hour">
               <p class="color-ch fs-hour">1 DAY AGO</p>
-              <p class="fw-bold fs-text ms-2 mb-translation">See translation</p>
+              <p class="fw-bold fs-text ms-2 mb-translation" type="button">See translation</p>
           </div>
       <hr class="hr">
            
            <!-- add comment -->
            <div class="mb-acomment d-flex justify-content-between align-items-center"> 
             <div class="d-flex">
-              <iconify-icon icon="entypo:emoji-happy" class="ml my-0 mr fs-4"></iconify-icon>
+              <iconify-icon icon="entypo:emoji-happy" class="ml my-0 mr fs-4" type="button"></iconify-icon>
               <p class="color-ch">Add comment...</p>
             </div>
                 <p class="color-post mr">Post</p>
               </div>
       </div>
-    </div>
-
+  </div>
     <!-- mobile footer -->
-<div class="fixed-bottom d-lg-none shadow">
+<div class="fixed-bottom d-lg-none shadow border-top">
   <div class="footer-mobile shadow">
               <ul class="list-unstyled d-flex justify-content-between">
                 <!-- home -->
@@ -678,7 +743,7 @@
  
                <!-- info -->
                <li class="px-3">
-                    <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" 
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip30wxSD5G_fp4NCBFdZxOgzX333MwNaHSw&usqp=CAU" alt="avatar" 
                          class="rounded-circle mt-1" style="width: 28px; height: 28px">
                </li>
  </div>
@@ -759,8 +824,8 @@
 </div>
 
 </div>
-
 </div>
+
 </div>
 </div>
 </div>
