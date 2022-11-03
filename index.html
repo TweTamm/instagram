@@ -29,15 +29,14 @@
         
           <!-- --- -->
             <!-- navbar content-->
-            <div class="row justify-content-center my-0"> 
+            <div class="row justify-content-center my-0 navbar"> 
               <!-- mobile header -->
-              <div class="d-lg-none">
-                 
-              </div>
+            
+              <!-- ----- -->
                 <!-- logo & arrow -->
-                <div class=" col d-flex align-items-center nav ">
+                <div class=" col d-flex align-items-center nav nav-one">
                     <!-- logo -->
-                    <div class="d-flex ml padding-header">
+                    <div class="d-flex ml padding-header mt-header ">
                       <iconify-icon icon="logos:instagram" style="font-size: 2rem;"></iconify-icon>
                       <!-- arrow icon -->
                       <iconify-icon icon="akar-icons:chevron-down" style="font-size: 0.8rem;" class="my-1" 
@@ -59,7 +58,7 @@
 
                    <!-- search input-->
                 <div class="col d-flex align-items-center ms-5 nav">
-                    <div class="input-group bg-input rounded ms-5 content">
+                    <div class="input-group bg-input rounded ms-5 content input-header">
                         <span class="input-group-prepend d-lg-block" id="searchMenu" 
                               data-bs-toggle="dropdown" aria-expanded="false"
                               data-bs-auto-close="outside">
@@ -152,7 +151,7 @@
                     </div>
                 </div>   
                   <!-- nav -->
-                <ul class=" ms-5 col d-lg-flex justify-content-center list-unstyled"
+                <ul class=" ms-5 col d-lg-flex d-md-flex justify-content-center list-unstyled position-list"
                    >
                    <!-- home -->
                    <li class="content">
@@ -162,13 +161,13 @@
                    </li>
                    <div class="d-flex jc">
                      <!-- message -->
-                     <li class="padding-header">
+                     <li class="padding-header mt-header">
                       <button class="btn">
                         <i class="far fa-comment fs-4"></i>
                       </button>
                      </li>
                      <!-- post -->
-                     <li class="padding-header">
+                     <li class="padding-header mt-header ">
                       <button class="btn">
                         <i class="far fa-plus-square fs-4"></i>
                       </button>
@@ -190,7 +189,7 @@
                    <!-- info -->
                    <li class="px-3 content">
                         <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" 
-                             class="rounded-circle mt-1" style="width: 28px; height: 28px">
+                          type="button"  class="rounded-circle mt-1" style="width: 28px; height: 28px;">
                    </li>
                 </ul>
             </div>
@@ -207,7 +206,7 @@
       <div class="position-user">
         <!-- head -->
        <div class="d-flex bg-white border text-muted rounded justify-content-between position-relative py-3 "
-            style="max-width: 444px; height:100px">   
+            style="min-width: 444px ; height:100px">   
            <!-- slider mobile -->
             <div class="d-lg-none ">
               <li class="ms-2 btn p-0" type="button">
@@ -215,7 +214,7 @@
                  <!-- style="width:58px; height:58px;object-fit: cover"> -->
                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip30wxSD5G_fp4NCBFdZxOgzX333MwNaHSw&usqp=CAU" alt="avatar" class="rounded-circle me-2"
                  style="width:60px; height:60px; object-fit: cover">
-                 <iconify-icon icon="akar-icons:circle-plus-fill" style="color: blue;" class="position-icon"></iconify-icon>   
+                 <iconify-icon icon="akar-icons:circle-plus-fill d-none" style="color: blue;" class= "position-icon"></iconify-icon>   
                  <p class="text-dark fs-6 d-block">Your story</p>
               </li>
               <li class="ms-2 btn p-0" type="button">
@@ -238,6 +237,26 @@
                  style="width:60px; height:60px;object-fit: cover">
                  <p class="text-dark fs-6 d-block">marima</p>
               </li>
+              <!-- <li class="ms-2 btn p-0 circle" type="button">
+                <img src="https://source.unsplash.com/random/5" alt="avatar" class="rounded-circle me-2 border border-danger" 
+                 style="width:60px; height:60px;object-fit: cover">
+                 <p class="text-dark fs-6 d-block">justin</p>
+              </li>
+              <li class="ms-2 btn p-0 circle" type="button">
+                <img src="https://source.unsplash.com/random/5" alt="avatar" class="rounded-circle me-2 border border-danger" 
+                 style="width:60px; height:60px;object-fit: cover">
+                 <p class="text-dark fs-6 d-block">lisa</p>
+              </li>
+              <li class="ms-2 btn p-0 circle" type="button">
+                <img src="https://source.unsplash.com/random/5" alt="avatar" class="rounded-circle me-2 border border-danger" 
+                 style="width:60px; height:60px;object-fit: cover">
+                 <p class="text-dark fs-6 d-block">jisoo</p>
+              </li>
+              <li class="ms-2 btn p-0 circle" type="button">
+                <img src="https://source.unsplash.com/random/5" alt="avatar" class="rounded-circle me-2 border border-danger" 
+                 style="width:60px; height:60px;object-fit: cover">
+                 <p class="text-dark fs-6 d-block">jennie</p>
+              </li> -->
             </div>  
             <!-- slider desktop -->
             <div class="d-lg-block d-none" style="max-width: 450px">
@@ -382,7 +401,7 @@
  
          <!-- picture 1 -->
        <!-- main -->
-     <div class="border bg-white rounded shadow mt-3  mb-footer1" style="width: 444px">
+     <div class="border bg-white rounded shadow mt-3 main-picture main-picture-mobile">
          <!-- top -->
          <div class="bg-white" style="height: 3.5rem">
             <div class="d-flex align-items-center justify-content-between">
@@ -392,13 +411,12 @@
                 <p class="text-dark fs-6 d-block mt-1">charlot</p>
              </div>
 
-               <i class="fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
+               <i class="d-lg-block d-none fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
 
               <!-- -- ellipsis-h menu- -->
-              <div class="modal fade
-              " id="iconMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
+              <div class="modal fade" id="iconMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
                 <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content bg-input-text rounded-5 ms-3" style="min-height:385px; width:400px">
+                  <div class="modal-content bg-input-text rounded-5" style="min-height:385px; width:400px">
                       <ul class="list-unstyled">
                         <li type="button" class="fs_text-menu fw-bold text-danger py-1 mt">Report</li><hr class="bg-border">
                         <li type="button" class="fs_text-menu fw-bold text-danger">Unfollow</li><hr class="bg-border">
@@ -550,7 +568,7 @@
  <!-- ============= -->
        <!-- picture 2 -->
     <!-- main -->
-    <div class="border bg-white rounded shadow mt-3 mb-footer2" style="width: 444px;">
+    <div class="border bg-white rounded shadow mt-3 mb-footer2 main-picture-mobile">
       <!-- top -->
       <div class="bg-white" style="height: 3.5rem">
          <div class="d-flex align-items-center justify-content-between">
@@ -560,12 +578,12 @@
              <p class="text-dark fs-6 d-block mt-1">engfa</p>
           </div>
            
-          <i class="fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
+          <i class="d-lg-block d-none fas fa-ellipsis-h me-3 mb-2" type="button" data-bs-toggle="modal" data-bs-target="#iconMenu"></i>       
 
           <!-- -- ellipsis-h menu- -->
           <div class="modal fade" id="iconMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="false">
             <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-input-text rounded-5 ms-3" style="min-height:385px; width:400px">
+              <div class="modal-content bg-input-text rounded-5" style="min-height:385px; width:400px">
                   <ul class="list-unstyled">
                     <li type="button" class="fs_text-menu fw-bold text-danger py-1 mt">Report</li><hr class="bg-border">
                     <li type="button" class="fs_text-menu fw-bold text-danger">Unfollow</li><hr class="bg-border">
@@ -644,7 +662,7 @@
      </div>
        <!-- <img class="img-fluid" src="https://source.unsplash.com/random/15" alt="img" style="width: 470px; height: 470px"> -->
       <!-- footer -->
-      <div class="bg-white rounded" style="height:200px; width: 444px;">
+      <div class="bg-white rounded" style="height:200px">
           <!-- icons -->
           <div class="list-icon d-flex align-items-center justify-content-between">
             <!-- heart -->
@@ -715,7 +733,7 @@
     <!-- mobile footer -->
 <div class="fixed-bottom d-lg-none shadow border-top">
   <div class="footer-mobile shadow">
-              <ul class="list-unstyled d-flex justify-content-between">
+              <ul class="list-unstyled d-md-none d-flex justify-content-between bg-white mb-0">
                 <!-- home -->
                 <li class="">
                   <button class="btn">

@@ -1,176 +1,258 @@
-*{
+* {
     padding: 0px;
     margin: 0px
 }
+
 body {
     overflow-x: hidden;
     box-shadow: border-box;
 }
-.bg-body{
-    background-color: rgba(255,255,255);
+
+.bg-body {
+    background-color: rgba(255, 255, 255);
 }
-.bg-input{
-    background-color: rgba(239,239,239)
+
+.bg-input {
+    background-color: rgba(239, 239, 239)
 }
-.bg-input-text{
+
+.bg-input-text {
     background-color: #fff;
 }
-.bg-arrow{
+
+.bg-arrow {
     background-color: #d33f3f;
 }
-.bg-border{
+
+.bg-border {
     background-color: #aeaeae
 }
-.text-color{
+
+.text-color {
     color: rgba(0, 149, 246)
 }
-.mt{
+
+.mt {
     margin-top: 10px;
 }
-.mr{
+
+.mr {
     margin-right: 0.8rem;
 }
-.ml{
+
+.ml {
     margin-left: 0.7rem;
 }
-.mr_dot{
+
+.mr_dot {
     position: relative;
     right: 0.9rem;
 }
-.ml_dot{
+
+.ml_dot {
     margin-right: 2rem;
 }
-.mt_text{
+
+.mt_text {
     position: relative;
     bottom: 3px;
 }
-.fs-text{
+
+.fs-text {
     font-size: 0.85rem
 }
-.fs-hour{
+
+.fs-hour {
     font-size: 0.7rem;
 }
 
-.mb-status{
+.mb-status {
     position: relative;
     bottom: 0.6rem
 }
-.mb-comment{
+
+.mb-comment {
     position: relative;
     bottom: 1.3rem
 }
-.mb-hour{
+
+.mb-hour {
     position: relative;
     bottom: 1.9rem;
 }
-.mb-suggest{
+
+.mb-suggest {
     position: relative;
     bottom: 1rem;
     right: 0.25rem
 }
-.mb-translation{
+
+.mb-translation {
     position: relative;
     bottom: 0.15rem
 }
-.color-ch{
+
+.color-ch {
     color: rgba(142, 142, 142)
 }
-.hr{
+
+.hr {
     position: relative;
     bottom: 3.4rem;
 }
-.color-post{
+
+.color-post {
     color: #47afff;
 }
-.mb-acomment{
+
+.mb-acomment {
     position: relative;
     bottom: 3.7rem;
 }
-.ml-main{
+
+.ml-main {
     margin-left: 70rem;
 }
-.position-user{
+
+.position-user {
     position: relative;
     bottom: 1.2rem;
 }
-.position-footer{
+
+.position-footer {
     position: relative;
     bottom: 2.35rem
 }
-.position-footer-two{
+
+.position-footer-two {
     position: relative;
     bottom: 3rem;
 }
-.nav{
+
+.nav {
     position: relative;
     bottom: 0.5rem;
 }
-.color-footer{
+
+.color-footer {
     color: rgba(199, 199, 199)
 }
-.fs_text-menu{
+
+.fs_text-menu {
     font-size: 14px;
 }
-.position-cancel{
+
+.position-cancel {
     position: relative;
     right: 0.1rem;
 }
-.list-icon .icon-pic:hover{
+
+.list-icon .icon-pic:hover {
     color: rgba(142, 142, 142);
 }
 
-/* @media(min-width:62em){
-    #arrow {
-        position: fixed;
-        z-index: 1000;
-      }
-} */
+/* Extra small devices (portrait phones) */
+@media (max-width: 575.98px) {
+    .main-picture-mobile{
+        width: 437px;
+    }
+    .position-user {
+        width: inherit;
+    }
 
-@media (max-width: 768px){
-    /* body {
-        overflow-x: hidden
-    } */
-    .padding{
+    .circle {
+        display: none;
+    }
+
+    .content {
+        display: none;
+    }
+}
+
+
+/* Small devices (landscape phone, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .padding {
         position: relative;
         right: 0.65rem
     }
-    .content{
+
+    .content {
         display: none;
     }
-    .d-flex{
-        display: inline-block;        
+
+    .d-flex {
+        display: inline-block;
     }
-    .ml{
+
+    .ml {
         margin-left: 10px;
     }
-    .mr-dot{
+
+    .mr-dot {
         margin-right: 3px
     }
-    .jc{
+
+    .jc {
         position: relative;
         left: 5rem;
     }
-    .position-icon{
+
+    .position-icon {
         position: relative;
         top: 1.5rem;
         right: 2rem;
     }
-    .mb-footer2{
+
+    .mb-footer2 {
         position: relative;
         bottom: 0.5rem;
         margin-bottom: 2rem;
     }
-    .mb-footer1{
+
+    .main-picture {
         position: relative;
         bottom: 0.3rem;
+        /* width: 580px; */
     }
-    .footer-mobile{
-        width: auto;
+
+    .footer-mobile {
+        min-width: 28rem;
         height: 50px;
-        background-color: #fff;        
+        background-color: #fff;
     }
-    .padding-header{
+
+    .padding-header {
         position: relative;
         right: 2.2rem
+    }
+
+    .mt-header {
+        margin-top: 0.8rem;
+    }
+
+    .position-user {
+        width: inherit;
+    }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    .position-user {
+        width: inherit;
+    }
+
+    .nav-one {
+        position: absolute;
+        margin-right: 7em;
+        margin-bottom: 1em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .navbar {
+        margin-left: -7em;
     }
 }
